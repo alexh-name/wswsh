@@ -1,4 +1,4 @@
-#!/usr/bin/mksh
+#!/bin/mksh
 # Script by Ypnose - http://ywstd.fr
 
 WSH_RAC="$1"
