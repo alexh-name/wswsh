@@ -20,6 +20,7 @@ function page_header {
 <body>
 <nav>
 	<a id="backlink" href="/">↜</a>
+	<a href="#endlinks">[n]</a>
 </nav>
 <div id="margin-box">
 	<div id="paper" class="center">
