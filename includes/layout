@@ -39,7 +39,7 @@ function page_header {
 function page_footer {
 	print '		</article>
 	</div>
-	<div id="links" class="center text-center">
+	<div id="lastlinks" class="center text-center">
 		<a href="/atom.xml" target="_blank">atom.xml</a>
 		<a href="mumble://'${WSH_TIT}':62877" target="_blank">mumble</a>
 		<a href="xmpp:one@'${WSH_TIT}'?message" target="_blank">xmpp</a>
