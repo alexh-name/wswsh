@@ -40,10 +40,12 @@ function def_regex {
 		ahrf*)
 			WSH_PAT="^[\t ]*:"
 			WSH_REG="^[\t ]*:[\t ]*|[\t ]*:[\t ]*$"
+			WSH_PAT_P="^[A-Za-z0-9_\(\"\{\}\/„\.\,\$\'\-\+öäüÖÄÜ→]+"
 			;;
 		*)
 			WSH_PAT="<h1>"
 			WSH_REG="^[\t ]*<h1>[\t ]*|[\t ]*<\/h1>.*$"
+			WSH_PAT_P="<p>"
 			;;
 	esac
 }
@@ -59,6 +61,11 @@ function run_hook {
 
 function gen_names {
 	WSH_GENF_TITLE="$(awk '/'"$WSH_PAT"'/{gsub(/'"$WSH_REG"'/,"");print $0;exit}' ${1})"
+	WSH_GENF_DESC="$(awk 'BEGIN { FS = "\n"; RS = "" }; /'"$WSH_PAT_P"'/ {for (p=1; p<NF; p++) {
+		printf("%s\n", $p)
+	}
+	printf("%s", $p)
+	exit}' ${1})"
 	WSH_GENF_NOSRC="${1#*/}"
 	WSH_GENF_HTML="${WSH_GENF_NOSRC%%.*}.html"
 }
