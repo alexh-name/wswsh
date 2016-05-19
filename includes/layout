@@ -75,7 +75,7 @@ function xml_content {
 		<link href="https://'${WSH_TIT}'/'${WSH_GENF_HTML}'"/>
 		<id>https://'"${WSH_TIT}"'/'"${WSH_GENF_HTML}"'</id>
 		<updated>'"${RDADAT}"'</updated>
-		<summary>'"${RSSDES}"'</summary>
+		<summary>'"${WSH_GENF_DESC}"'</summary>
 	</entry>
 '
 }
