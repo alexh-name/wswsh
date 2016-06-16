@@ -34,7 +34,7 @@ function page_header {
 <div id="margin-box">
 	<div id="topbox" class="center">
 		<img src="/extra/jr_logo_schrift_blau.svg" alt="Logo Jugend Rettet">
-		<p>Jugend Rettet e.V. braucht Unterstützung von Web-Entwicklung und -Design bis System-Administration. <a href="mailto:alex@jugendrettet.org">Schick mir eine Mail!</a></p>
+		<p><a href="https://jugendrettet.org">Jugend Rettet e.V.</a> braucht Unterstützung von Web-Entwicklung und -Design bis System-Administration. <a href="mailto:alex@jugendrettet.org">Schick mir eine Mail!</a></p>
 	</div>
 	<div id="paper" class="center">
 		<article>'
