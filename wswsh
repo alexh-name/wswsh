@@ -37,7 +37,7 @@ function get_structure {
 function def_regex {
 	# Extensible part...
 	case $WSH_INTERP in
-		ahrf*)
+		./ahrf.awk)
 			WSH_PAT="^[\t ]*:"
 			WSH_REG="^[\t ]*:[\t ]*|[\t ]*:[\t ]*$"
 			WSH_PAT_P="^[A-Za-z0-9_\(\"\{\}\/„\.\,\$\'\-\+öäüÖÄÜ→]+"
